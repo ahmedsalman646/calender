@@ -1,0 +1,41 @@
+body {
+    font-family: 'Ubuntu', sans-serif;
+}
+
+
+
+.calenderSection {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    grid-template-rows: 50px repeat(5, 100px);
+    gap: 10px;
+}
+
+.date, .day {
+    font-size: 2em;
+    /* font-weight: bold; */
+    border-radius: 7px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(230, 255, 253, .7);
+    transition: all ease 1s;
+}
+.date:hover {
+    letter-spacing: 5px;
+    transform: rotate(-4deg);
+}
+
+.day {
+    background-color: rgba(230, 255, 253);
+    font-size: 2.5em;
+    font-weight: bold;
+}
+.day:hover {
+    transform: scale(.9);
+}
+
+.anotherDate {
+    color: rgb(195, 190, 190);
+    background-color: rgba(230, 255, 253, .5);
+}
